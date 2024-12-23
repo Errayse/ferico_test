@@ -1,16 +1,36 @@
-# ferico_test
+# Polygon Drawer
 
-A new Flutter project.
+Простое Flutter-приложение для рисования многоугольников:
 
-## Getting Started
+1. **Кликните по холсту** – появятся точки, соединённые линиями.  
+2. **Чтобы замкнуть фигуру**, ткните рядом с первой точкой.  
+3. **Введите длины сторон** и нажмите **«Применить»**, чтобы все углы стали 90° и стороны соответствовали введённым значениям.  
+4. **Кнопка «Сбросить»** очищает холст для нового рисунка.
 
-This project is a starting point for a Flutter application.
+## Запуск
 
-A few resources to get you started if this is your first Flutter project:
+1. Установите и настройте [Flutter](https://docs.flutter.dev/get-started/install).  
+2. Склонируйте репозиторий:  
+   ```bash
+   git clone https://github.com/Errayse/ferico_test
+   ```  
+3. Установите зависимости:  
+   ```bash
+   flutter pub get
+   ```  
+4. Запустите приложение (эмулятор, устройство или веб):  
+   ```bash
+   flutter run
+   ```  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Файлы
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **main.dart** – вся логика: Canvas (CustomPainter), GestureDetector для кликов, а также UI для ввода сторон.
+
+## Идеи улучшения
+
+- Перемещение (drag) уже существующих точек.  
+- Анимация при перестройке фигур.  
+- Тонкая настройка валидации сторон и т.д.
+
+Приятного пользования!
